@@ -5,12 +5,12 @@ const App = (props) => {
   const [flag, setFlag] = useState(false);
 
   function handleClick() {
-    setFlag(true);
+    setFlag("Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy");
   }
 
   return (
     <div className="App" id="main">
-      {flag && <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>}
+      <p id="para" className="show">{flag}</p>
       <button id="click" onClick={handleClick}>Click Me</button>
     </div>
   ); // prettier-ignore
