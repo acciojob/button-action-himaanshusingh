@@ -10,7 +10,7 @@ const App = (props) => {
 
   return (
     <div className="App" id="main">
-      <p id="para" className="show">{flag}</p>
+      <p id="para" className="show hide">{flag}</p>
       <button id="click" onClick={handleClick}>Click Me</button>
     </div>
   ); // prettier-ignore
